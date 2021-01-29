@@ -1,6 +1,6 @@
-number = 200000000000000000
+number = 4
 iterations = 100
-currentGuess = number / 2
+currentGuess = number
 iterativeAdd = currentGuess / 2
 
 for x in range(iterations):
