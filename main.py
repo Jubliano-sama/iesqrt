@@ -16,7 +16,8 @@ def findRoot(number):
             currentGuess -= iterativeAdd
             iterativeAdd /= 2
         if iterations > 10000:
-            print(currentGuess)
+            print("Found mildly precise root: %s" % currentGuess)
+            return
 
     print("Found precise root in %s iteration(s):" % iterations)
     print(currentGuess.__round__(requiredDecimals).__str__() + neg)
